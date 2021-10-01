@@ -25,8 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:ci": "react-scripts test --watchAll=false --coverage",
     "eject": "react-scripts eject",
+    "lint": "eslint './**/*.{js,jsx,ts,tsx}'",
+    "test:ci": "react-scripts test --watchAll=false --coverage",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -45,6 +46,9 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.2.1",
     "husky": "^7.0.0"
   }
 }

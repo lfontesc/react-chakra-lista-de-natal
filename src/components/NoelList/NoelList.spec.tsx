@@ -13,7 +13,7 @@ const defaultNoelList: NoelListProps = {
       description: 'Power Ranger'
     }
   ]
-}
+};
 
 describe('Testar componente de lista de pedidos', () => {
   it('deve renderizar o componente', () => {
@@ -37,4 +37,4 @@ describe('Testar componente de lista de pedidos', () => {
     render(<NoelList data={[]} />);
     expect(screen.getByText('Não há itens')).toBeTruthy();
   });
-})
+});

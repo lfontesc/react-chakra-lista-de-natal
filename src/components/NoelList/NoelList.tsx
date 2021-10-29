@@ -3,7 +3,7 @@ import { BellIcon } from '@chakra-ui/icons';
 import React, { ReactElement } from 'react';
 import { IconType } from 'react-icons/lib';
 
-interface ItemList {
+export interface ItemList {
   icon?: ReactElement<IconType>;
   description: string;
 };

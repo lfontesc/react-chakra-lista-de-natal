@@ -24,7 +24,7 @@ export const App = () => {
   ]);
 
   const [newItem, setNewItem] = useState<ItemList>({description: ''});
-  
+
   useEffect(() => {
     if (newItem && newItem.description !== '') {
       setList([...list, newItem])
